@@ -1,0 +1,13 @@
+@using AspNetMvcReactJS.Areas.HelpPage
+@model AspNetMvcReactJS.Areas.HelpPage.SampleGeneration.InvalidSample
+
+@if (HttpContext.Current.IsDebuggingEnabled)
+{
+    <div class="warning-message-container">
+        <p>@Model.ErrorMessage</p>
+    </div>
+}
+else
+{
+    <p>Sample not available.</p>
+}

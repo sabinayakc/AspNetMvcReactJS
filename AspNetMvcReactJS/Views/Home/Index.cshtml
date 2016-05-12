@@ -1,0 +1,10 @@
+﻿@model IEnumerable<AspNetMvcReactJS.Models.CommentModel>
+@using System.Web.Optimization.React;
+@Html.React("CommentBox", new
+{
+    initialData = Model,
+    url = Url.Action("Comments"),
+    submitUrl = Url.Action("AddComments"),
+    pollInterval = 2000,
+},containerId:"content-react")
+
