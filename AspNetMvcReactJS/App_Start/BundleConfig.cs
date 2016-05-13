@@ -29,7 +29,7 @@ namespace AspNetMvcReactJS
                         new BabelTransform(),
                         new JsMinify(),
                         }).Include("~/Scripts/react.js", "~/Scripts/react-dom.js",
-                         "~/Scripts/jsx/First.jsx",
+                         "~/Scripts/jsx/CommentBox.jsx",
                          "~/Scripts/showdown.js"
                         ));
                         }
